@@ -1,6 +1,6 @@
 import { useAppContext } from "../Calculator/CalculatorState";
 
-export default function ButtonCalculator({type, value}){
+export default function ButtonCalculator({type, value, classType}){
     const calculator = useAppContext();
     function handleClick(){
         switch(type){
@@ -21,6 +21,6 @@ export default function ButtonCalculator({type, value}){
     }
 
     return(
-        <button className='calc-btn' onClick={handleClick} > {value} </button>
+        <button className={`calc-btn ${classType} m-1 w-[100px] h-[100px]` } onClick={handleClick} > {value} </button>
     )
 }

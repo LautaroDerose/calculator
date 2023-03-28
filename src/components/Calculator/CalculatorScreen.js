@@ -9,13 +9,13 @@ const CalculatorScreen = () => {
 
     return (
         <div className="calculatorScreen">
-            <div>
+            <div className='text-slate-700 mr-9 mb-2'>
                 <span>Memory: {calculator.memory}</span>
                 <span>Operation: {calculator.operation}</span>
                 <span>Decimal: {calculator.isDecimal ? 'decimal' : 'entero'}</span>
                 
             </div>
-            <div className="calculatorCurrentValue">
+            <div className="calculatorCurrentValue text-slate-400 mr-9 mb-8 border-b-2 border-slate-600 ">
               {calculator.currentValue}{calculator.isDecimal ? '.' : ''}  
             </div>
         </div>

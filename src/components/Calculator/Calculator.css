@@ -1,6 +1,7 @@
 .calculatorContainer{
     width: 500px;
-    margin: 100px auto;
+    /* margin: 100px auto; */
+    
 }
 
 .container{
@@ -23,9 +24,9 @@
     cursor: pointer;
 }
 
-.calc-btn:hover{
+/* .calc-btn:hover{
     background-color: rgb(188, 188, 188) ;
-}
+} */
 
 .calculatorScreen{
     display: flex;
