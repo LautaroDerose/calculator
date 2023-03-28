@@ -1,0 +1,39 @@
+.calculatorContainer{
+    width: 500px;
+    margin: 100px auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ;
+}
+
+.calc-btn{
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.calc-btn:hover{
+    background-color: rgb(188, 188, 188) ;
+}
+
+.calculatorScreen{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+}
+
+.calculatorCurrentValue{
+    font-size: 49px;
+}
